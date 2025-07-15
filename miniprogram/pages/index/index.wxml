@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="title">请输入您的生日</view>
+  <picker mode="date" value="{{date}}" start="1900-01-01" end="2100-12-31" bindchange="onDateChange">
+    <view class="picker">
+      {{date ? date : '请选择日期'}}
+    </view>
+  </picker>
+  <button type="primary" bindtap="onSubmit" loading="{{loading}}" disabled="{{!date || loading}}">获取头像建议</button>
+  <view wx:if="{{error}}" class="error">{{error}}</view>
+  <view wx:if="{{suggestion}}">
+    <view class="subtitle">分析过程与建议：</view>
+    <view class="result">{{suggestion}}</view>
+  </view>
+</view>
