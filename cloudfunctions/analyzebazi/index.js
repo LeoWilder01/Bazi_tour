@@ -4,7 +4,7 @@ const axios = require('axios')
 cloud.init()
 
 const QWEN_API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
-const QWEN_API_KEY = 'sk-cd5b411468404937bdd95727314828e1'; // 替换为你的key
+const QWEN_API_KEY = 'sk-xxx'; // 替换为你的key
 
 const TIMEOUT = 60000;
 
